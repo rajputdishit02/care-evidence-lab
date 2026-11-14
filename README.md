@@ -25,7 +25,11 @@ Open http://127.0.0.1:8765. The server binds only to loopback. On Windows, if Po
 
 120 fictional services and seeded examples of mismatched amounts, duplicate claims, unclaimed services, missing evidence and an orphan claim. All rates are fictional. Matching uses exact service IDs, intentionally avoiding uncertain entity resolution. Amounts use integer cents; duration-based rates round to the nearest cent.
 
-The explanation layer uses templates. It does not call an AI model. checkExplanation verifies source identifiers and permitted numerical values; it cannot detect unsupported prose. A future model adapter needs a separately labelled evaluation set and explicit checks for unsupported causal explanations, prompt injection and conflicting sources.
+## Optional local AI drafts
+
+Install Ollama, run `ollama pull llama3.2`, and start Ollama locally. Select a finding and choose **Draft with local model**. The model orders verified sentences. The server validates its selection and attaches source references. A human reviews the draft before saving. The default workflow runs without a model or API key.
+
+See [the walkthrough](DEMO.md).
 
 ## Honest security boundaries
 
