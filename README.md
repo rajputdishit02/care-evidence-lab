@@ -29,7 +29,20 @@ The explanation layer uses templates. It does not call an AI model. checkExplana
 
 ## Honest security boundaries
 
-Local single-user demonstration with no authentication or tenant isolation. Reviewer identity is self-declared. Decisions live in memory and reset on restart; export to retain them. Hash-linked events illustrate change detection but an operator could rewrite the full chain. No claim of immutable audit storage or ISO/SOC certification. POST origin checks limit browser cross-origin writes, but this is not a production security boundary. Do not expose the server to a network or upload real personal information.
+Local single-user demonstration with no authentication or tenant isolation. Reviewer identity is self-declared. Decisions persist in local-data/session.json (excluded from Git), using write-then-rename saves. Hash-linked events are verified at startup and bound to the dataset, but an operator could rewrite the full chain. No claim of immutable audit storage or ISO/SOC certification. POST origin checks limit browser cross-origin writes, but this is not a production security boundary. Do not expose the server to a network or upload real personal information. Run only one server process per store file.
+
+## CSV import and saved reviews
+
+Use the dashboard to upload examples/services.csv and examples/claims.csv together. Headers and their order must match the examples. IDs must be unique across both files; participant identifiers should be fictional codes. Durations are whole minutes and amounts/rates are integer cents. Blank duration or rate remains unknown and generates a missing-evidence finding. Invalid dates, negative numbers, duplicate IDs and malformed CSV are rejected before replacing the dataset. Each file is limited to 500 KB and 5000 records.
+
+Imports replace the current dataset only before reviews exist. After recording decisions, export the session and start a separate store for a new dataset. In PowerShell:
+
+```powershell
+$env:CARE_LAB_STORE = 'local-data/another-demo.json'
+node server.js
+```
+
+The edit decision stores the reviewer's proposed text as a decision note while retaining the original finding. Approving a finding does not approve or submit a claim. Saved history is local to your computer; GitHub contains code and synthetic examples only.
 
 ## Validation
 
@@ -48,6 +61,6 @@ Research references (reviewed 14 November 2026):
 ## Next development milestones
 
 - Independently authored edge-case benchmark and external CSV schema validation.
-- Persistent authenticated review store and role separation before shared use.
+- Authentication and role separation before shared use; persistence is implemented locally.
 - Evaluated AI explanations with claim-level evidence labels; no automatic approvals.
 - Provider interviews to validate workflow and measure actual review effort.

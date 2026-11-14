@@ -1,0 +1,4 @@
+id,participant,date,minutes,rateCents
+S1,DEMO-1,2026-11-01,90,6000
+S2,DEMO-2,2026-11-01,,6000
+S3,DEMO-3,2026-11-01,60,6000
