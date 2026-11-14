@@ -1,0 +1,219 @@
+{
+  "scope": "Synthetic seeded benchmark; not independent validation or evidence of production safety",
+  "services": 120,
+  "claims": 121,
+  "expectedFindings": 25,
+  "detectedFindings": 25,
+  "truePositives": 25,
+  "falsePositives": 0,
+  "falseNegatives": 0,
+  "precision": 1,
+  "recall": 1,
+  "checks": [
+    {
+      "id": "S001:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S002:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S003:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S020:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S021:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S022:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S023:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S040:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S041:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S042:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S043:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S060:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S061:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S062:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S063:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S080:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S081:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S082:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S083:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S100:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S101:missing_evidence",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S102:duplicate_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S103:unclaimed_service",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S120:amount_mismatch",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    },
+    {
+      "id": "S999:orphan_claim",
+      "pass": true,
+      "unknown": [],
+      "missing": [],
+      "unsupportedNumbers": [],
+      "semanticReviewRequired": true
+    }
+  ],
+  "limitations": [
+    "Ground truth and detector authored together; this measures fixture consistency.",
+    "Citation checks verify references and allowed amounts, not whether arbitrary prose is supported.",
+    "Fictional rates and matching rules; no legal, clinical or billing eligibility judgments."
+  ]
+}

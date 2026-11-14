@@ -1,0 +1,1 @@
+{"name":"care-evidence-lab","version":"0.1.0","private":true,"scripts":{"start":"node server.js","test":"node --test","evaluate":"node evaluate.js"},"engines":{"node":">=20"}}
